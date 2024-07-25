@@ -1,0 +1,33 @@
+//***********************************************
+  //Configuración propia
+  "workbench.colorCustomizations": {
+    "sideBar.background": "#222436",
+    "sideBar.foreground": "#8289cc",
+    "sideBarSectionHeader.background": "#222436",
+    "sideBarSectionHeader.foreground": "#8289cc",
+    "sideBar.border": "#222436",
+    "activityBar.background": "#222436", // Color de fondo de la Activity Bar
+    "activityBar.foreground": "#d0d4ff", // Color de los iconos de la Activity Bar
+    "activityBar.inactiveForeground": "#8289cc", // Color de los iconos inactivos de la Activity Bar
+    "activityBar.border": "#222436", // Color del borde de la Activity Bar
+    "activityBarBadge.background": "#4c517e", // Color de fondo de las insignias en la Activity Bar
+    "activityBarBadge.foreground": "#d0d4ff", // Color del texto de las insignias en la Activity Bar
+    "statusBar.background": "#222436",
+    "statusBar.border": "#222436",
+    "tab.border": "#222436",
+    "tab.activeBorder": "#3b3f5f",
+    "tab.activeForeground": "#d0d4ff",
+    "tab.lastPinnedBorder": "#fff",
+    "tab.inactiveBackground": "#222436",
+    "editorGroupHeader.tabsBackground": "#222436",
+    "editorGroupHeader.border": "#222436",
+    "terminal.background": "#222436",
+    "terminal.border": "#222436",
+    "panel.background": "#222436",
+    "panel.border": "#353855",
+    "editorGroup.border": "#3b3f5f"
+  },
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  //***********************************************
