@@ -1,0 +1,25 @@
+1. Instalar windows terminal(Microsoft Store)
+2. Instalar powershell(Microsoft Store)
+3. Instalar chocolatey
+4. Instalar neovim con chocolatey
+6. Cambiar terminal por defecto en windows terminal:
+  6.1. Nos dirigimos a la flecha hacia abajo(v)
+  6.2. Clic en configuraciones
+  6.3. En la opción Inicio(Startuo) 
+        -> Perfil predeterminado(Default profile) -> Elegimos powershell
+  6.4. Aplicación de terminal predeterminada -> Elegimos Windows Terminal
+7. Agregar un tema personalizado:
+  7.1. En configuración nos dirigimos a la parte inferior izquierda y 
+       clickeamos en la opción Abrir archivo JSON(Open Json file)
+  7.2. En el json no dirigimos al final de la opción schemes y agregamos
+       la configuración de este repositorio
+       (https://github.com/Richienb/windows-terminal-snazzy/blob/main/snazzy.json)
+  7.3. Guardamos y cerramos el archivo JSON
+  7.4. En la configuración de windows terminal nos dirigimos a 
+       combinación de colores(color schemes)
+  7.5. Seleccionamos la combinación de color Snazzy
+  7.6. Luego buscamos la opción Establecer como predeterminado
+       (set as default) y guardamos.
+8. Cambiar estilo de las pestañas:
+  8.1. configuración -> apariencia(appearance) -> Usar Material acrilico en la fila de tabulación
+       (Use acrylic material in the tab row)
