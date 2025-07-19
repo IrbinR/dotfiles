@@ -23,3 +23,6 @@ opt.smartcase = true
 --opt.cmdheight = 0
 opt.wrap = true
 opt.linebreak = true
+
+-- Barra de estado y lineas de comandos
+opt.showmode = false -- Muestra el modo actual(insertar, normal y visual), si usas lualine desactivalo
