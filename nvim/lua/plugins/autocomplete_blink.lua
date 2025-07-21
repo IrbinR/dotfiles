@@ -1,10 +1,3 @@
---[[return {
-
-    "Saghen/blink.nvim",
-    lazy = false,
-    opts = {}, -- puedes agregar animaciones o dejar vacío
-
-}]]
 return {
   'saghen/blink.nvim',
   build = 'cargo build --release', -- for delimiters

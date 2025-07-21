@@ -1,3 +1,4 @@
+local servers = { "lua_ls", "pyright", "ts_ls", "html", "emmet_ls" }
 return {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -10,7 +11,7 @@ return {
         require("mason").setup()
         -- Configurar Mason-LSPConfig (solo instalación)
         require("mason-lspconfig").setup({
-            ensure_installed = { "lua_ls", "pyright", "ts_ls" },
+            ensure_installed = servers,
             automatic_installation = true,
         })
         
@@ -29,12 +30,27 @@ return {
         end
         
         -- Configurar servidores manualmente (sin cambios)
-        local servers = { "lua_ls", "pyright", 'ts_ls' }
+        --local servers = servers
         for _, server in ipairs(servers) do
-            lspconfig[server].setup({
-                capabilities = capabilities,
-                on_attach = on_attach,
-            })
+            if server == "emmet_ls" then
+                lspconfig[server].setup({
+                    capabilities = capabilities,
+                    on_attach = on_attach,
+                    filetypes = { "html", "css", "scss", "javascript", "typescript", "vue", "svelte" },
+                    init_options = {
+                        html = {
+                            options = {
+                                ["bem.enabled"] = true,
+                            },
+                        },
+                    },
+                })
+            else
+                lspconfig[server].setup({
+                    capabilities = capabilities,
+                    on_attach = on_attach,
+                })
+            end
         end
     end,
 }
