@@ -7,7 +7,6 @@ opt.relativenumber = true
 opt.cursorline = true
 opt.termguicolors = true
 
-
 -- Comportamiento de edicción
 opt.expandtab = true
 opt.shiftwidth = 4
