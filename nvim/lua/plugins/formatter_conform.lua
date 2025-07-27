@@ -69,5 +69,7 @@ return {
 				} or nil,
 			})
 		end, { range = true })
+
+		vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
 	end,
 }
