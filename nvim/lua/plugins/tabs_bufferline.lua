@@ -7,7 +7,6 @@ return {
 	},
 
 	opts = function()
-		-- Primero requerimos el módulo aquí donde sí está disponible
 		local bufferline = require("bufferline")
 		local colourSelected = "#EDC595"
 		local underlineColor = "#FF8AA6"
@@ -22,11 +21,13 @@ return {
 					Snacks.bufdelete({ buf = bufnum })
 				end,
 
+				close_icon = "󱎘",
+				buffer_close_icon = "󱎘",
 				-- Configuraciones adicionales
 				show_buffer_close_icons = true,
 				diagnostics = "nvim_lsp",
-				style_preset = bufferline.style_preset.minimal, -- Usamos la referencia local
-				separator_style = "thin",
+				style_preset = bufferline.style_preset.minimal,
+				separator_style = { "", "" },
 				indicator = {
 					style = "underline",
 				},
@@ -86,7 +87,7 @@ return {
 					fg = underlineColor,
 
 					sp = underlineColor,
-					underline = true, -- ¡Importante!
+					underline = true,
 				},
 				indicator_selected = {
 					sp = underlineColor,
@@ -94,50 +95,15 @@ return {
 				},
 
 				tab_selected = {
-					fg = colourSelected, -- mismo color que buffer_selected
-					sp = underlineColor, -- mismo underline color
-					underline = true,
-				},
-				tab_separator_selected = {
-					fg = "#232634", -- mismo color del fondo para que no se vea
-					--bg = "#232634",
-					bg = {
-						attribute = "bg",
-						highlight = "Normal",
-					},
-					sp = underlineColor,
-					underline = true,
+					fg = "#9ED89B",
+					--sp = "#9ED89B", -- mismo underline color
+					underline = false,
 				},
 				tab_close = {
 					fg = underlineColor,
-					--bg = "#232634",
-					bg = {
-						attribute = "bg",
-						highlight = "Normal",
-					},
-					sp = underlineColor,
-					underline = true,
 				},
 				-- Si también quieres que las tabs no seleccionadas tengan estilo
 				tab = {
-					fg = "#6c7086",
-					--bg = "#232634",
-					bg = {
-						attribute = "bg",
-						highlight = "Normal",
-					},
-				},
-				tab_separator = {
-					fg = "#232634",
-					--bg = "#232634",
-					bg = {
-						attribute = "bg",
-						highlight = "Normal",
-					},
-				},
-				close_button = {
-					fg = "#6c7086",
-					--bg = "#232634",
 					bg = {
 						attribute = "bg",
 						highlight = "Normal",

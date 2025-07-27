@@ -28,6 +28,8 @@ return {
 		end)
 
 		vim.g.rainbow_delimiters = { highlight = highlight }
-		return { indent = { highlight = highlight } }
+		return {
+			indent = { highlight = highlight },
+		}
 	end,
 }
