@@ -1,5 +1,4 @@
 return {
-
 	"catppuccin/nvim",
 	name = "catppuccin",
 	priority = 1000,
@@ -9,9 +8,11 @@ return {
 		integrations = {
 			mason = true,
 			noice = true,
+			cmp = true,
 		},
 	},
-	init = function()
+	config = function(_, opts)
+		require("catppuccin").setup(opts)
 		vim.cmd.colorscheme("catppuccin")
 	end,
 }

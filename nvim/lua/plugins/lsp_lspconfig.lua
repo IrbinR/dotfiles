@@ -4,7 +4,7 @@ return {
 	dependencies = {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
-		-- CAMBIO: Remover "hrsh7th/cmp-nvim-lsp" ya que ahora usas blink.cmp
+		"hrsh7th/cmp-nvim-lsp",
 	},
 	config = function()
 		-- Configurar Mason
@@ -17,40 +17,65 @@ return {
 
 		local lspconfig = require("lspconfig")
 
-		-- CAMBIO: Usar blink.cmp en lugar de cmp-nvim-lsp
-		local capabilities = require("blink.cmp").get_lsp_capabilities()
+		-- 1. Capacidades estándar (con snippets y autocompletado)
+		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 		-- Configuración común (sin cambios)
 		local on_attach = function(_, bufnr)
-			local map = function(mode, lhs, rhs)
-				vim.keymap.set(mode, lhs, rhs, { buffer = bufnr })
+			local map = function(mode, lhs, rhs, desc)
+				vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc })
 			end
-			map("n", "K", vim.lsp.buf.hover)
-			map("n", "gd", vim.lsp.buf.definition)
+			map("n", "K", vim.lsp.buf.hover, "Mostrar documentación")
+			map("n", "gd", vim.lsp.buf.definition, "Ir a definición")
+			map("n", "<leader>ca", vim.lsp.buf.code_action, "Acciones de código")
+			map("n", "gr", vim.lsp.buf.references, "Busca todas Referencias donde aparece")
+			map("n", "<leader>rn", vim.lsp.buf.rename, "Cambiar variable/funcion en todo el proyecto")
 		end
 
-		-- Configurar servidores manualmente (sin cambios)
-		--local servers = servers
+		-- 3. Configuración específica por servidor
 		for _, server in ipairs(servers) do
+			local server_opts = {
+				capabilities = capabilities,
+				on_attach = on_attach,
+			}
+
 			if server == "emmet_ls" then
-				lspconfig[server].setup({
-					capabilities = capabilities,
-					on_attach = on_attach,
-					filetypes = { "html", "css", "scss", "javascript", "typescript", "vue", "svelte" },
-					init_options = {
-						html = {
-							options = {
-								["bem.enabled"] = true,
-							},
+				server_opts.filetypes = {
+					"html",
+					"css",
+					"scss",
+					"javascript",
+					"typescript",
+					"vue",
+					"svelte",
+				}
+				server_opts.init_options = {
+					html = { options = { ["bem.enabled"] = true } },
+				}
+			elseif server == "lua_ls" then
+				server_opts.settings = {
+					Lua = {
+						runtime = {
+							version = "LuaJIT", -- Neovim usa LuaJIT
+						},
+						diagnostics = {
+							globals = { "vim" }, -- Reconoce 'vim' como global
+						},
+						workspace = {
+							library = vim.api.nvim_get_runtime_file("", true),
+							checkThirdParty = false, -- No preguntar sobre third party
+						},
+						telemetry = {
+							enable = false, -- Desactivar telemetría
+						},
+						completion = {
+							callSnippet = "Replace", -- Mejor autocompletado
 						},
 					},
-				})
-			else
-				lspconfig[server].setup({
-					capabilities = capabilities,
-					on_attach = on_attach,
-				})
+				}
 			end
+
+			lspconfig[server].setup(server_opts)
 		end
 	end,
 }

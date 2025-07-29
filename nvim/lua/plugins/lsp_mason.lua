@@ -1,8 +1,7 @@
 return {
 
-    "williamboman/mason-lspconfig.nvim",
-    opts = {
-        automatic_installation = true,
-    },
-
+	"williamboman/mason-lspconfig.nvim",
+	opts = {
+		--automatic_installation = true,
+	},
 }
