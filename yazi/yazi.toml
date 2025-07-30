@@ -1,0 +1,7 @@
+[mgr]
+ratio = [3,3,2]
+
+[opener]
+edit=[
+	{ run = 'nvim "$@"', block = true, for = "unix", desc = "Editor de terminal neovim" },
+]
