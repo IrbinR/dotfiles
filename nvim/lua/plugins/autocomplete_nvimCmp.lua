@@ -72,6 +72,7 @@ return {
 
 				{ name = "luasnip" }, -- Snippets
 				{ name = "path" }, -- Rutas
+				{ name = "render-markdown" },
 			}, {
 				{ name = "buffer" }, -- Texto en buffers
 			}),

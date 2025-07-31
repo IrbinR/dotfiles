@@ -1,4 +1,4 @@
-local servers = { "lua_ls", "pyright", "ts_ls", "html", "emmet_ls" }
+local servers = { "lua_ls", "pyright", "ts_ls", "html", "emmet_ls", "marksman" }
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
