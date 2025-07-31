@@ -13,3 +13,10 @@ opacity = 0.8
 normal = { family = "MonaspiceRn NFM", style= "Regular" }
 #size = 12.4
 size = 11.9
+
+[keyboard]
+bindings = [
+    { key = "F10", mods = "Control|Shift", action = "ToggleMaximized" },
+    { key = "F11", mods = "Control|Shift", action = "ToggleFullscreen" },
+    { key = "q", mods = "Control|Shift", action = "Quit" }
+]
