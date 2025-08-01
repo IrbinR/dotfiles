@@ -1,4 +1,6 @@
-#: Performance tuning {{{
+# ╔══════════════════════════════════════════════════════════╗
+# ║                    Performance tuning                    ║
+# ╚══════════════════════════════════════════════════════════╝
 
 # repaint_delay 10
 
@@ -28,4 +30,3 @@
 #: monitor. With a very high speed mouse/high keyboard repeat rate,
 #: you may notice some slight input latency. If so, set this to no.
 
-#: }}}
