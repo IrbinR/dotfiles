@@ -20,7 +20,7 @@ return {
 		local formatters_by_ft = {
 			lua = { "stylua" },
 			python = { "isort", "black" },
-			rust = { "rustfmt", lsp_format = "fallback" },
+			rust = { "rustfmt" },
 		}
 
 		for _, ft in ipairs(prettierd_langs) do
@@ -38,6 +38,8 @@ return {
 		}
 	end,
 
+	keys = require("core.keymaps.conform"),
+
 	init = function()
 		local ensure_installed = {
 			"stylua",
@@ -49,11 +51,10 @@ return {
 		vim.api.nvim_create_autocmd("User", {
 			pattern = "LazyDone",
 			callback = function()
-				local registry = require("mason-registry")
-				for _, name in ipairs(ensure_installed) do
-					local ok, pkg = pcall(registry.get_package, name)
-					if ok and not pkg:is_installed() then
-						pkg:install()
+				local mason_registry = require("mason-registry")
+				for _, pkg in ipairs(ensure_installed) do
+					if mason_registry.has_package(pkg) and not mason_registry.get_package(pkg):is_installed() then
+						mason_registry.get_package(pkg):install()
 					end
 				end
 			end,

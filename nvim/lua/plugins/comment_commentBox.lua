@@ -10,4 +10,5 @@
 ]]
 return {
 	"LudoPinelli/comment-box.nvim",
+    keys = require("core.keymaps.commentBox")
 }

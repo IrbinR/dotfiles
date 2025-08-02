@@ -25,4 +25,3 @@ opt.linebreak = true
 
 -- ─[ Barra de estado y lineas de comandos ]───────────────────────────
 opt.showmode = false -- Muestra el modo actual(insertar, normal y visual), si usas lualine desactivalo
-print("Cargando core/options")

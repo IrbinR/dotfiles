@@ -1,6 +1,8 @@
 return {
 	"numToStr/Comment.nvim",
-	opts = {
-		-- add any options here
-	},
+    -- event = "VeryLazy",
+    lazy = true,
+	opts = {},
+    keys = require("core.keymaps.commentNvim")
+
 }

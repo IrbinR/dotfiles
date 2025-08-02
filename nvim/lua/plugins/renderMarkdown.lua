@@ -9,4 +9,5 @@ return {
 		completions = { lsp = { enabled = true } },
 		render_modes = true,
 	},
+	ft = { "markdown" },
 }
