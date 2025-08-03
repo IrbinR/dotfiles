@@ -5,7 +5,11 @@ Antes de instalar mi configuracion personal asegurate que tengas esto instalado 
     ```sh
     npm install -g tree-sitter-cli
     ````
-* Lazygit -> snacks lo requiere para abrir dentro de neovim
+* `Lazygit` -> snacks lo requiere para abrir dentro de neovim
     ```sh
     sudo pacman -S lazygit
+    ```
+* `python-pynvim` -> necesario para el plugin braceyVim
+    ```sh
+    sudo pacman -S python-pynvim
     ```

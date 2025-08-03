@@ -1,6 +1,6 @@
 return {
 	"folke/snacks.nvim",
-	priority = 1000,
+	priority = 999,
 	lazy = false,
 	---@type snacks.Config
 	opts = {
@@ -16,4 +16,6 @@ return {
 		--statuscolumn = { enabled = true },
 		words = { enabled = true },
 	},
+
+    keys = require("core.keymaps.snacks")
 }
