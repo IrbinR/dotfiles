@@ -18,8 +18,7 @@
 --]]
 return {
 	"folke/todo-comments.nvim",
-	event = "VeryLazy",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	opts = {},
-    keys = require("core.keymaps.todoComments")
+    keys = require("core.keymaps.plugins.todoComments")
 }

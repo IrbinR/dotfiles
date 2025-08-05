@@ -3,6 +3,6 @@ return {
     -- event = "VeryLazy",
     lazy = true,
 	opts = {},
-    keys = require("core.keymaps.commentNvim")
+    keys = require("core.keymaps.plugins.commentNvim")
 
 }

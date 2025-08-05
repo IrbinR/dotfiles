@@ -17,5 +17,5 @@ return {
 		words = { enabled = true },
 	},
 
-    keys = require("core.keymaps.snacks")
+    keys = require("core.keymaps.plugins.snacks")
 }

@@ -18,7 +18,7 @@ return {
 		-- add options here
 	},
 
-    keys = require("core.keymaps.neotree"),
+    keys = require("core.keymaps.plugins.neotree"),
 
 	config = function(_, opts)
 		require("neo-tree").setup(opts)

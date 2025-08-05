@@ -3,14 +3,21 @@ return {
 	-- ─[ Terminal flotante (por defecto) ]────────────────────────────────
 	{
 		"<leader>tf",
-		"<cmd>Toggleterm direction=float<cr>",
+		"<cmd>ToggleTerm direction=float<cr>",
 		desc = "Toggle terminal flotante",
 	},
 
 	-- ─[ Terminal horizontal (15 líneas de altura) ]──────────────────────
 	{
 		"<leader>th",
-		"<cmd>Toggleterm direction=horizontal size=20<cr>",
+		"<cmd>ToggleTerm direction=horizontal size=15<cr>",
+		desc = "Toggle terminal horizontal",
+	},
+
+	-- ─[ Terminal vertical (60 líneas de altura) ]──────────────────────
+	{
+		"<leader>tv",
+		"<cmd>ToggleTerm direction=vertical size=60<cr>",
 		desc = "Toggle terminal horizontal",
 	},
 

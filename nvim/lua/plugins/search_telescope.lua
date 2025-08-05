@@ -3,5 +3,5 @@ return {
 	tag = "0.1.8",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	opts = {},
-	keys = require("core.keymaps.telescope"),
+	keys = require("core.keymaps.plugins.telescope"),
 }

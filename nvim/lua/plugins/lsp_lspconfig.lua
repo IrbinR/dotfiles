@@ -1,4 +1,4 @@
-local servers = { "lua_ls", "pyright", "ts_ls", "html", "emmet_ls", "marksman" }
+local servers = { "lua_ls", "pyright", "ts_ls", "html", "emmet_ls", "marksman", "bashls" }
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
@@ -22,7 +22,7 @@ return {
 
 		-- Configuración común (sin cambios)
 		local on_attach = function(_, bufnr)
-            require("core.keymaps.nvimLspconfig")
+            require("core.keymaps.plugins.nvimLspconfig")
 		end
 
 		-- 3. Configuración específica por servidor

@@ -21,6 +21,7 @@ return {
 			lua = { "stylua" },
 			python = { "isort", "black" },
 			rust = { "rustfmt" },
+            sh = { "shfmt" }
 		}
 
 		for _, ft in ipairs(prettierd_langs) do
@@ -38,7 +39,7 @@ return {
 		}
 	end,
 
-	keys = require("core.keymaps.conform"),
+	keys = require("core.keymaps.plugins.conform"),
 
 	init = function()
 		local ensure_installed = {
