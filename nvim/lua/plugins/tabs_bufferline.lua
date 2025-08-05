@@ -2,9 +2,11 @@ return {
 
 	"akinsho/bufferline.nvim",
 	version = "*",
+    event = "VeryLazy",
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 	},
+    keys = require("core.keymaps.plugins.bufferline"),
 
 	opts = function()
 		local bufferline = require("bufferline")

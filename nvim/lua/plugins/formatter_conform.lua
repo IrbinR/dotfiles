@@ -47,6 +47,7 @@ return {
 			"isort",
 			"black",
 			"prettierd",
+            "shfmt"
 		}
 
 		vim.api.nvim_create_autocmd("User", {
