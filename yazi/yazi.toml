@@ -5,3 +5,7 @@ ratio = [3,3,2]
 edit=[
 	{ run = 'nvim "$@"', block = true, for = "unix", desc = "Editor de terminal neovim" },
 ]
+
+play = [
+    { run = 'vlc "$@"', orphan = true, for = "unix", desc = "Reproductor multimedia VLC" }
+]
