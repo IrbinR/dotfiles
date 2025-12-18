@@ -1,5 +1,0 @@
-return {
-	{ "<leader>Rs", desc = "Send request" },
-	{ "<leader>Ra", desc = "Send all requests" },
-	{ "<leader>Rb", desc = "Open scratchpad" },
-}
