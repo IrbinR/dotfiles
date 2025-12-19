@@ -71,3 +71,45 @@ Si quieres que tu terminal se vea asi cuando uses `ls`
 
 ![lsd](./.resources/lsd.png)
 
+Para tenerlo así entonces tenemos que instalar [LSD](https://github.com/lsd-rs/lsd)
+```bash
+sudo apt install lsd
+```
+
+Para que puedas usar `lsd` como `ls` debemos crear alias en .zshrc
+
+```bash
+alias ll='lsd -lh --group-dirs=first'
+alias la='lsd -a --group-dirs=first'
+alias l='lsd -l --group-dirs=first'
+alias lla='lsd -lha --group-dirs=first'
+alias ls='lsd --group-dirs=first'
+```
+
+Listo al abrir una terminal nueva ya puedes ver el efecto de `ls`
+
+## BAT
+![BAT](./.resources/bat.png)
+
+Si con LSD habiamos mejorado el aspecto de ls también podemos hacer que cat mejore la forma como nos muestra la información, pasamos de un contenido gris a uno más colorido porque [BAT](https://github.com/sharkdp/bat) resalta de acuerdo al tipo de archivo que abre, esto es excelente en lenguajes de programación.
+
+Su instalación es sencilla, por lo cual haremos uso del gestor de paquetes
+```bahs
+sudo apt install bat
+```
+
+Por último creamos el alias en .zshrc
+```bash
+alias cat='bat'
+```
+
+> En algunas distribuciones de linux el alias es con batcat. Por eso antes de realizar el alias probar diretamente con el comando bat o batcat en la terminal, solo abre un archivo con bat o batcat(`bat file.txt`)
+
+## Fastfetch
+Sabiendo que ahora neofetch quedo archivado, una alternativa es [fastfetch](https://github.com/fastfetch-cli/fastfetch). Fastfetch al igual que neofetch nos permite visualizar información del sistema de manera atractiva.
+
+Fastfetch ya se encuentra dentro de los paquetes oficiales de muchas distribuciones linux pero si en caso no estuviera en tu distribución esta la forma manual que es por sus binarios, el cual es un [archivo](https://github.com/fastfetch-cli/fastfetch/releases) tar.
+```bash
+sudo apt install fastfetch
+```
+* En caso no te aparezca fastfetch en tu gestor de paquetes [aquí](./.resources/fastfetch.md) te muestro como instalarlo manualmente
