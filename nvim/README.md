@@ -29,62 +29,63 @@
 
 |Onedark|Onedark Dark| 
 |---|---| 
-|![Onedark](./resources/themes/onedark.png)| ![OnedarkDark](./resources/themes/onedarkDark.png)|
+|![Onedark](../.resources/nvim/themes/onedark.png)| ![OnedarkDark](../.resources/nvim/themes/onedarkDark.png)|
 
 |Onedark Light|Onedark Vivid|
 |---|---|
-|![OnedarkLight](./resources/themes/onedarkLight.png)|![OnedarkVivid](./resources/themes/onedarkVivid.png)|
+|![OnedarkLight](../.resources/nvim/themes/onedarkLight.png)|![OnedarkVivid](../.resources/nvim/themes/onedarkVivid.png)|
+
 
 ### Catppuccin
 
 |Frappe|Latte|
 |---|---|
-|![CatppuccinFrappe](./resources/themes/catppuccinFrappe.png)|![CatppuccinLatte](./resources/themes/catppuccinLatte.png)|
+|![CatppuccinFrappe](../.resources/nvim/themes/catppuccinFrappe.png)|![CatppuccinLatte](../.resources/nvim/themes/catppuccinLatte.png)|
 
 |Macchiato|Mocha|
 |---|---|
-|![CatppuccinMacchiato](./resources/themes/catppuccinMacchiato.png)|![CatppuccinMocha](./resources/themes/catppuccinMocha.png)|
+|![CatppuccinMacchiato](../.resources/nvim/themes/catppuccinMacchiato.png)|![CatppuccinMocha](../.resources/nvim/themes/catppuccinMocha.png)|
 
 ### Monokai Pro
 
 |Light|Machine|
 |---|---|
-|![MonokaiProLight](./resources/themes/monokaiproLight.png)|![MonokaiProMachine](./resources/themes/monokaiproMachine.png)|
+|![MonokaiProLight](../.resources/nvim/themes/monokaiproLight.png)|![MonokaiProMachine](../.resources/nvim/themes/monokaiproMachine.png)|
 
 |Octagon|Ristretto|
 |---|---|
-|![MonokaiProOctagon](./resources/themes/monokaiproOctagon.png)|![MonokaiProRistretto](./resources/themes/monokaiproRistretto.png)|
+|![MonokaiProOctagon](../.resources/nvim/themes/monokaiproOctagon.png)|![MonokaiProRistretto](../.resources/nvim/themes/monokaiproRistretto.png)|
 
 |Spectrum | 
 |---|
-|![MonokaiProSpectrum](./resources/themes/monokaiproSpectrum.png)|
+|![MonokaiProSpectrum](../.resources/nvim/themes/monokaiproSpectrum.png)|
 ### Solarized
 
 |Solarized | 
 |---|
-|![Solarized](./resources/themes/solarized.png)|
+|![Solarized](../.resources/nvim/themes/solarized.png)|
 
 ### Gruvbox
 
 |Gruvbox| 
 |---|
-|![Gruvbox](./resources/themes/gruvbox.png)|
+|![Gruvbox](../.resources/nvim/themes/gruvbox.png)|
 
 ### Tundra
 
 |Tundra | 
 |---|
-|![Tundra](./resources/themes/gruvbox.png)|
+|![Tundra](../.resources/nvim/themes/tundra.png)|
 
 # Demo
-![Demo](./resources/neovim.gif)
+![Demo](../.resources/nvim/neovim.gif)
 
 # Install
 ~~~bash
 git clone --depth 1 https://gitlab.com/irbinr1/dotfiles.git ~/.config/nvim && rm -rf ~/.config/nvim/resources && nvim
 ~~~
 
-# Unistall
+# Uninstall
 ~~~bash
 rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
