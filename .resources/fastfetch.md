@@ -1,5 +1,5 @@
 # Instalación manual de fasfetch
-1. Descargar el [archivo](https://github.com/fastfetch-cli/fastfetch/releases) `fasfetch-linux-amd64.tar.gz`, no olvidar expandir las opciones(Show all 65 assets).
+1. Descargar el [archivo](https://github.com/fastfetch-cli/fastfetch/releases) `fasfetch-linux-amd64.tar.gz`, no olvidar expandir las opciones(Show all 65 assets).  
 ![DownloadFasfetch](./dowloadFasfetch.png)
 2. Descomprimimos el archivo tar, existen varias formas de descomprimir un archivo, elije el que mas te acomode. En mi caso lo realizo desde la terminal, no te olvides de estar dentro del directorio donde se descargo el archivo tar.
 ![descomprimirTar](./descomprimirFasfetch.png)
