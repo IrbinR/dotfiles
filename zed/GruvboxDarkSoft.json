@@ -1,0 +1,61 @@
+{
+  "buffer_font_family": "MonaspiceRn Nerd Font Mono",
+  "ui_font_family": "MonaspiceRn Nerd Font Mono",
+  "icon_theme": "Soft Charmed Icons",
+  "vim_mode": true,
+  "relative_line_numbers": "enabled",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Gruvbox Dark Soft",
+  },
+  "theme_overrides": {
+    "Gruvbox Dark Soft": {
+      "background": "#3B3735",
+      "editor.background": "#3B3735",
+      "editor.gutter.background": "#3B3735",
+      "border.variant": "#3B3735",
+      "border": "#3B3735",
+      "scrollbar.track.border": "#3B3735",
+      "scrollbar.thumb.border": "#3B3735",
+      "scrollbar.track.background": "#3B3735",
+      "title_bar.background": "#3B3735",
+      "panel.background": "#3B3735",
+      "panel.focused_border": "#3B3735",
+      "status_bar.background": "#3B3735",
+      "terminal.background": "#3B3735",
+      "toolbar.background": "#3B3735",
+      "tab_bar.background": "#3B3735",
+      "tab.inactive_background": "#3B3735",
+      "tab.active_background": "#57524F",
+    },
+  },
+  "title_bar": {
+    // "show_onboarding_banner": false,
+    "show_project_items": false,
+  },
+  "project_panel": {
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "scrollbar": {
+    "show": "auto",
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "tabs": {
+    "file_icons": true,
+  },
+  "indent_guides": {
+    "line_width": 2,
+    "active_line_width": 2,
+    "coloring": "indent_aware",
+  },
+  "colorize_brackets": true,
+}
+

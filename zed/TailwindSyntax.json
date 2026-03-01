@@ -1,0 +1,57 @@
+{
+  "buffer_font_family": "MonaspiceRn Nerd Font Mono",
+  "ui_font_family": "MonaspiceRn Nerd Font Mono",
+  "icon_theme": "Soft Charmed Icons",
+  "vim_mode": true,
+  "relative_line_numbers": "enabled",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Tailwind Syntax",
+  },
+  "theme_overrides": {
+    "Tailwind Syntax": {
+      "border.variant": "#1E293B",
+      "border": "#1E293B",
+      "scrollbar.track.border": "#1E293B",
+      "scrollbar.thumb.border": "#1E293B",
+      "scrollbar.track.background": "#1E293B",
+      "title_bar.background": "#1E293B",
+      "panel.background": "#1E293B",
+      "panel.focused_border": "#1E293B",
+      "status_bar.background": "#1E293B",
+      "terminal.background": "#1E293B",
+      "toolbar.background": "#1E293B",
+      "tab_bar.background": "#1E293B",
+      "tab.inactive_background": "#1E293B",
+      "tab.active_background": "#2C3D59",
+    },
+  },
+  "title_bar": {
+    "show_project_items": false,
+  },
+  "project_panel": {
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "scrollbar": {
+    "show": "auto",
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "tabs": {
+    "file_icons": true,
+  },
+  "indent_guides": {
+    "line_width": 2,
+    "active_line_width": 2,
+    "coloring": "indent_aware",
+  },
+  "colorize_brackets": true,
+}
+

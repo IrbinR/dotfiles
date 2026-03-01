@@ -1,0 +1,56 @@
+{
+  "ui_font_family": "MonaspiceRn Nerd Font Mono",
+  "buffer_font_family": "Comic Code Ligatures",
+  "icon_theme": "Base Charmed Icons",
+  "vim_mode": true,
+  "relative_line_numbers": "enabled",
+  "base_keymap": "VSCode",
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Tokyo Night Storm",
+  },
+  "theme_overrides": {
+    "Tokyo Night Storm": {
+      "border.variant": "#24283B",
+      "border": "#24283B",
+      "scrollbar.track.border": "#24283B",
+      "scrollbar.thumb.border": "#24283B",
+      "title_bar.background": "#24283B",
+      "panel.background": "#24283B",
+      "panel.focused_border": "#24283B",
+      "status_bar.background": "#24283B",
+      "terminal.background": "#24283B",
+      "toolbar.background": "#24283B",
+      "tab_bar.background": "#24283B",
+      "tab.inactive_background": "#24283B",
+    },
+  },
+  "title_bar": {
+    // "show_onboarding_banner": false,
+    "show_project_items": false,
+  },
+  "project_panel": {
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "scrollbar": {
+    "show": "auto",
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "tabs": {
+    "file_icons": true,
+  },
+  "indent_guides": {
+    "line_width": 2,
+    "active_line_width": 2,
+    "coloring": "indent_aware",
+  },
+  "colorize_brackets": true,
+}
+

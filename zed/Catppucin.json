@@ -1,0 +1,58 @@
+{
+  "buffer_font_family": "MonaspiceRn Nerd Font Mono",
+  "ui_font_family": "MonaspiceRn Nerd Font Mono",
+  "icon_theme": "Soft Charmed Icons",
+  "vim_mode": true,
+  "relative_line_numbers": "enabled",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Macchiato",
+  },
+  "theme_overrides": {
+    "Catppuccin Macchiato": {
+      "border.variant": "#24273A",
+      "border": "#24273A",
+      "scrollbar.track.border": "#24273A",
+      "scrollbar.thumb.border": "#24273A",
+      "scrollbar.track.background": "#24273A",
+      "title_bar.background": "#24273A",
+      "panel.background": "#24273A",
+      "panel.focused_border": "#24273A",
+      "status_bar.background": "#24273A",
+      "terminal.background": "#24273A",
+      "toolbar.background": "#24273A",
+      "tab_bar.background": "#24273A",
+      "tab.inactive_background": "#24273A",
+      "tab.active_background": "#414769",
+    },
+  },
+  "title_bar": {
+    // "show_onboarding_banner": false,
+    "show_project_items": false,
+  },
+  "project_panel": {
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "scrollbar": {
+    "show": "auto",
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "tabs": {
+    "file_icons": true,
+  },
+  "indent_guides": {
+    "line_width": 2,
+    "active_line_width": 2,
+    "coloring": "indent_aware",
+  },
+  "colorize_brackets": true,
+}
+
