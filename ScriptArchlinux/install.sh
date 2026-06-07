@@ -36,9 +36,7 @@ EOF
 
 read -p "Tamaño para ROOT (ej: 40G 0 50G) [por defecto +40G]: " TAMANIO_ROOT
 TAMANIO_ROOT=${TAMANIO_ROOT:-+40G}
-if [[ ! "$TAMANIO_ROOT" == +* ]]; then
-    TAMANIO_ROOT="+$TAMANIO_ROOT"
-fi
+TAMANIO_ROOT=${TAMANIO_ROOT#+}
 
 pacman -Sy curl --noconfirm
 ZONA=$(curl -s https://ipapi.co/timezone || echo "America/Lima")
