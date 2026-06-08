@@ -28,10 +28,11 @@ DISCO_GB=$(( DISCO_BYTES / 1024 / 1024 / 1024 ))
 DISCO_DISPONIBLE=$(( DISCO_GB - 1 )) 
 
 cat <<EOF
-┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
-╏       El disco $DISCO tiene un tamaño total de: ${DISCO_GB}GB        ╏
-╏ Descontando EFI, te quedan aprox: ${DISCO_DISPONIBLE}GB disponibles. ╏
-┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+╏ El disco $DISCO tiene un tamaño total de: ${DISCO_GB}GB  ╏
+╏ Descontando EFI, te quedan aprox: ${DISCO_DISPONIBLE}GB  ╏
+╏ disponibles.                                             ╏
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 EOF
 
 read -p "Tamaño para ROOT (ej: 40G 0 50G) [por defecto +40G]: " TAMANIO_ROOT
@@ -162,7 +163,10 @@ cat <<EOF
 ╏ Establece contraseñas ahora:                             ╏
 ┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 EOF
+echo "━━ Ingrese la contraseña para el usuario root ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 arch-chroot /mnt passwd
+
+echo "━━ Ingrese la contraseña para el usuario $USUARIO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 arch-chroot /mnt passwd $USUARIO
 
 cat <<EOF
