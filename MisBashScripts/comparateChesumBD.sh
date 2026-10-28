@@ -163,8 +163,8 @@ help() {
         getBD "view"
     fi
     echo -e "--C\t\tEstablecer la ruta raíz que se utilizara para las comparaciones"
-    echo -e "--R\t\tMostrar la ruta de la raíz"
-    echo -e "--U\t\tEditar la ruta raíz"
+    echo -e "--R\t\tMostrar ubicación de la ruta raíz"
+    echo -e "--U\t\tEditar la ubicación de la ruta raíz"
     echo -e "--D\t\tEliminar la ruta raíz"
     echo "$(getColor "RESET")"
 }
